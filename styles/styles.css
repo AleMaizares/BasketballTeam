@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
 }
 
 body main {
@@ -49,63 +50,26 @@ body main {
   width: 120px;
 }
 
-@media screen and (max-width: 575px) {
-  .img {
-    width: 100px;
-  }
-  .navbar-nav {
-    gap: 0;
-  }
-  .navbar-dark .navbar-nav .nav-link {
-    padding-left: 10px;
-  }
-}
-
 /* FIN DEL ENCABEZADO */
 /* TITULOS */
 .contents-titles {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 20px;
   height: auto;
 }
 
 .contents-titles .name {
   color: #fff;
-  font-size: 45px;
+  font-size: 2.8rem;
   height: 50px;
   margin: 0;
 }
 
 .contents-titles .name2 {
   color: #fff;
-  font-size: 35px;
+  font-size: 2.1rem;
   height: 40px;
   margin: 0;
-}
-
-@media (max-width: 390px) {
-  .contents-titles {
-    text-align: center;
-    padding-top: 25px;
-    height: auto;
-  }
-  .name {
-    color: #fff;
-    font-size: 30px;
-  }
-  .name2 {
-    color: #fff;
-    font-size: 28px;
-  }
-}
-
-@media (min-width: 391px) and (max-width: 520px) {
-  .name {
-    font-size: 37px;
-  }
-  .name2 {
-    font-size: 28px;
-  }
 }
 
 /* FIN DE LOS TITULOS */
@@ -163,12 +127,6 @@ body main {
   background-color: #00568fc7;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-
-@media (max-width: 390px) {
-  .card img {
-    height: 180px;
-  }
 }
 
 /* FIN DE TARJETAS(Inicio) */
@@ -246,7 +204,7 @@ body main {
 }
 
 .shop .items .item button {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
   font-size: 15px;
   color: #fff;
   padding: 8px 15px;
@@ -311,7 +269,7 @@ body main {
   border-radius: 3px;
   color: #fff;
   font-size: 14px;
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
 }
 
 .contact .form .textarea {
@@ -329,7 +287,7 @@ body main {
   margin-top: 8px;
   margin-bottom: 5px;
   font-size: 18px;
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
 }
 
 .contact .form .submit:hover {
@@ -421,6 +379,26 @@ body main {
   font-size: 18px;
 }
 
+/* FIN DEL FOOTER */
+@media (max-width: 390px) {
+  .contents-titles {
+    text-align: center;
+    padding-top: 25px;
+    height: auto;
+  }
+  .name {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  .name2 {
+    color: #fff;
+    font-size: 1.7rem;
+  }
+  .card img {
+    height: 180px;
+  }
+}
+
 @media (max-width: 495px) {
   .footer {
     height: 130px;
@@ -443,5 +421,24 @@ body main {
   }
 }
 
-/* FIN DEL FOOTER */
+@media (min-width: 391px) and (max-width: 520px) {
+  .name {
+    font-size: 37px;
+  }
+  .name2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  .img {
+    width: 100px;
+  }
+  .navbar-nav {
+    gap: 0;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    padding-left: 10px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
