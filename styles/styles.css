@@ -132,7 +132,7 @@ body main {
 /* FIN DE TARJETAS(Inicio) */
 /* JUGADORES(Equipo) */
 .team {
-  background-image: url(../resources/fondohornets.png);
+  background-image: url(../resources/fondo1.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -151,7 +151,7 @@ body main {
 .team .players .player {
   width: 320px;
   margin: 20px;
-  background-color: rgba(41, 41, 41, 0.836);
+  background-color: rgba(41, 41, 41, 0.589);
   border-radius: 5px;
 }
 
@@ -178,6 +178,12 @@ body main {
 
 /* FIN DE JUGADORES(Equipo) */
 /* TIENDA(Shop) */
+.shop {
+  background-image: url(../resources/fondo2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .shop .items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,11 +244,17 @@ body main {
 
 /* FIN DE TIENDA(Shop) */
 /* CONTACTO(Contact) */
-.contact {
+.main-contact {
+  background-image: url(../resources/fondo3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.main-contact .contact {
   padding-bottom: 28px;
 }
 
-.contact .form {
+.main-contact .contact .form {
   background-color: rgba(0, 0, 0, 0.5);
   width: 90%;
   max-width: 550px;
@@ -253,13 +265,13 @@ body main {
   color: #fff;
 }
 
-.contact .form .label {
+.main-contact .contact .form .label {
   display: block;
   font-size: 18px;
   margin: 5px;
 }
 
-.contact .form .input, .contact .form .textarea {
+.main-contact .contact .form .input, .main-contact .contact .form .textarea {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
   outline: none;
@@ -272,11 +284,11 @@ body main {
   font-family: "Hind Siliguri", sans-serif;
 }
 
-.contact .form .textarea {
+.main-contact .contact .form .textarea {
   resize: none;
 }
 
-.contact .form .submit {
+.main-contact .contact .form .submit {
   width: 100%;
   outline: none;
   background: #7b68ee;
@@ -290,7 +302,7 @@ body main {
   font-family: "Hind Siliguri", sans-serif;
 }
 
-.contact .form .submit:hover {
+.main-contact .contact .form .submit:hover {
   background-color: #6952f0;
 }
 
@@ -379,6 +391,22 @@ body main {
   font-size: 18px;
 }
 
+.footer .links .red1 {
+  background-color: #3f3375;
+}
+
+.footer .links .red2 {
+  background-color: #4e3f96;
+}
+
+.footer .links .red3 {
+  background-color: #6a55ca;
+}
+
+.footer .links .red4 {
+  background-color: #8b71ff;
+}
+
 /* FIN DEL FOOTER */
 @media (max-width: 390px) {
   .contents-titles {
@@ -386,15 +414,15 @@ body main {
     padding-top: 25px;
     height: auto;
   }
-  .name {
+  .contents-titles .name {
     color: #fff;
     font-size: 1.8rem;
   }
-  .name2 {
+  .contents-titles .name2 {
     color: #fff;
     font-size: 1.7rem;
   }
-  .card img {
+  .contents-cards .card img {
     height: 180px;
   }
 }
@@ -422,18 +450,15 @@ body main {
 }
 
 @media (min-width: 391px) and (max-width: 520px) {
-  .name {
+  .contents-titles .name {
     font-size: 37px;
   }
-  .name2 {
+  .contents-titles .name2 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 575px) {
-  .img {
-    width: 100px;
-  }
   .navbar-nav {
     gap: 0;
   }

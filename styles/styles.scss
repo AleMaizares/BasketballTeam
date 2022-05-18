@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
 
-// variable
+// variables
 $font:'Hind Siliguri', sans-serif;
+// map
+$redes: (
+    red1: #3f3375,
+    red2: #4e3f96,
+    red3: #6a55ca,
+    red4: #8b71ff
+);
 
 *{
     margin: 0;
@@ -108,7 +115,7 @@ body{
 
 /* JUGADORES(Equipo) */
 .team{
-    background-image: url(../resources/fondohornets.png);
+    background-image: url(../resources/fondo1.jpg);
     background-position: center;
     background-size: cover;
     .players{
@@ -118,7 +125,7 @@ body{
         .player{
             width: 320px;
             margin: 20px;
-            background-color: rgba(41, 41, 41, 0.836);
+            background-color: rgba(41, 41, 41, 0.589);
             border-radius: 5px;
             img{
                 width: 100%;
@@ -143,99 +150,110 @@ body{
 /* FIN DE JUGADORES(Equipo) */
 
 /* TIENDA(Shop) */
-.shop .items{
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-top: 12px;
-    padding-bottom: 20px;
-    .item{
-        background-color: #fff;
-        margin: 15px;
-        border-radius: 5px;
-        width: 250px;
-        h2{
-            padding-top: 15px;
-        }
-        button{
-            font-family: $font;
-            font-size: 15px;
-            color: #fff;
-            padding: 8px 15px;
-            margin-bottom: 10px;
-            background-color: #0fa6b1;
-            border: none;
-            border-radius: 3px;
-        }
-        button:hover{
-            background-color: #0b7c85;
-            cursor: pointer;
-        }
-        .img{
+.shop{
+    background-image: url(../resources/fondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    .items{
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 12px;
+        padding-bottom: 20px;
+        .item{
+            background-color: #fff;
+            margin: 15px;
+            border-radius: 5px;
             width: 250px;
-            .imgconfig{
-                padding-top: 50px;
-                padding-bottom: 50px;
+            h2{
+                padding-top: 15px;
             }
-            img{
-                width: 100%;
+            button{
+                font-family: $font;
+                font-size: 15px;
+                color: #fff;
+                padding: 8px 15px;
+                margin-bottom: 10px;
+                background-color: #0fa6b1;
+                border: none;
+                border-radius: 3px;
+            }
+            button:hover{
+                background-color: #0b7c85;
+                cursor: pointer;
+            }
+            .img{
+                width: 250px;
+                .imgconfig{
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                }
+                img{
+                    width: 100%;
+                }
             }
         }
-    }
-    .item2{
-        background-color: #F8F8F8;
+        .item2{
+            background-color: #F8F8F8;
+        }
     }
 }
 /* FIN DE TIENDA(Shop) */
 
 /* CONTACTO(Contact) */
-.contact{
-    padding-bottom: 28px;
-    .form{
-        background-color:rgba(0, 0, 0, 0.5);
-        width: 90%;
-        max-width: 550px;
-        margin: auto;
-        padding: 15px 35px;
-        margin-top: 25px;
-        border-radius: 5px;
-        color: #fff;
-        .label{
-            display: block;
-            font-size: 18px;
-            margin: 5px;
-        }
-        .input,.textarea{
-            background-color: rgba(0, 0, 0, 0.7);
-            border: none;
-            outline: none;
-            border-bottom: 2px solid #7b68ee;
-            width: 100%;
-            padding: 12px;
-            border-radius: 3px;
+.main-contact{
+    background-image: url(../resources/fondo3.jpg);
+    background-position: center;
+    background-size: cover;
+    .contact{
+        padding-bottom: 28px;
+        .form{
+            background-color:rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 550px;
+            margin: auto;
+            padding: 15px 35px;
+            margin-top: 25px;
+            border-radius: 5px;
             color: #fff;
-            font-size: 14px;
-            font-family: $font;
-        }
-        .textarea{
-            resize: none;
-        }
-        .submit{
-            width: 100%;
-            outline: none;
-            background: #7b68ee;
-            border: none;
-            color: #fff;
-            padding: 15px;
-            cursor: pointer;
-            margin-top: 8px;
-            margin-bottom: 5px;
-            font-size: 18px;
-            font-family: $font;
-        }
-        .submit:hover{
-            background-color: #6952f0;
+            .label{
+                display: block;
+                font-size: 18px;
+                margin: 5px;
+            }
+            .input{
+                background-color: rgba(0, 0, 0, 0.7);
+                border: none;
+                outline: none;
+                border-bottom: 2px solid #7b68ee;
+                width: 100%;
+                padding: 12px;
+                border-radius: 3px;
+                color: #fff;
+                font-size: 14px;
+                font-family: $font;
+            }
+            .textarea{
+                @extend .input;
+                resize: none;
+            }
+            .submit{
+                width: 100%;
+                outline: none;
+                background: #7b68ee;
+                border: none;
+                color: #fff;
+                padding: 15px;
+                cursor: pointer;
+                margin-top: 8px;
+                margin-bottom: 5px;
+                font-size: 18px;
+                font-family: $font;
+            }
+            .submit:hover{
+                background-color: #6952f0;
+            }
         }
     }
 }
@@ -307,6 +325,11 @@ body{
         i{
             font-size: 18px;
         }
+        @each $red1, $color in $redes {
+            .#{$red1} {
+                background-color: $color;
+            }
+        }
     }
 }
 /* FIN DEL FOOTER */
@@ -317,17 +340,21 @@ body{
         text-align: center;
         padding-top: 25px;
         height: auto;
+        .name{
+            color: #fff;
+            font-size: 1.8rem;
+        }
+        .name2{
+            color: #fff;
+            font-size: 1.7rem;
+        }
     }
-    .name{
-        color: #fff;
-        font-size: 1.8rem;
-    }
-    .name2{
-        color: #fff;
-        font-size: 1.7rem;
-    }
-    .card img{
-        height: 180px;
+    .contents-cards{
+        .card{
+            img{
+                height: 180px;
+            }
+        }
     }
 }
 @media (max-width: 495px){
@@ -337,23 +364,22 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    .footer .texts2{
-        margin-bottom: 10px;
+        .texts2{
+            margin-bottom: 10px;
+        }
     }
 }
 @media (min-width: 391px) and (max-width: 520px){
-    .name{
-        font-size: 37px;
-    }
-    .name2{
-        font-size: 28px;
+    .contents-titles{
+        .name{
+            font-size: 37px;
+        }
+        .name2{
+            font-size: 28px;
+        }
     }
 }
 @media (max-width: 575px){
-    .img{
-        width: 100px;
-    }
     .navbar-nav{
         gap: 0;
     }
